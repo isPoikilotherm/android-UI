@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width= "match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+<RelativeLayout
+    android:id="@+id/lunbo"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <com.example.wenjuanapp.MyViewPager
+        android:id="@+id/looper_pager"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:id="@+id/points_container"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/lunbo"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lunbo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:id="@+id/main1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/main1" />
+        <ImageView
+            android:id="@+id/main2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/main1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/main2" />
+        <TextView
+            android:id="@+id/main1_name"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/main1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="相关问题了解情况问卷调查"/>
+        <TextView
+            android:id="@+id/main2_name"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/main2"
+            android:layout_toRightOf="@+id/main1_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="学生心理健康问卷调查"/>
+        <ImageView
+            android:id="@+id/main3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/main1_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/main3" />
+        <ImageView
+            android:id="@+id/main4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/main2_name"
+            android:layout_toRightOf="@+id/main3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main4" />
+        <TextView
+            android:id="@+id/main3_name"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/main3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="有奖问卷调查"/>
+        <TextView
+            android:id="@+id/main4_name"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/main4"
+            android:layout_toRightOf="@+id/main3_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="图书馆问卷调查"/>
+        <ImageView
+            android:id="@+id/main5"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/main3_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/main5" />
+        <ImageView
+            android:id="@+id/main6"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/main4_name"
+            android:layout_toRightOf="@+id/main3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main6" />
+        <TextView
+            android:id="@+id/main5_name"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/main5"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="爱卫月有奖问卷调查"/>
+        <TextView
+            android:id="@+id/main6_name"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/main6"
+            android:layout_toRightOf="@+id/main5_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="关于学前鉴于专业的问卷调查"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/main_main_btn"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_selected"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/main_project_btn"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/project" />
+        <ImageButton
+            android:id="@+id/main_me_btn"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/me"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+

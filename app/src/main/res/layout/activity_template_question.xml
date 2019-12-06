@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_dark">
+
+        <ImageView
+            android:id="@+id/template_question_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/iv_back"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_selected_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_oneselect_template"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="单选"/>
+        <Button
+            android:id="@+id/btn_manyselect_template"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="多选"/>
+        <Button
+            android:id="@+id/btn_scoring_template"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="打分"/>
+        <Button
+            android:id="@+id/btn_shortanswer_template"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="简答"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
